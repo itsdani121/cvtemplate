@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">cvtemplate</string>
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="qualification">Qualification</string>
+    <string name="upload">Upload CV</string>
+    <string name="photo">photo</string>
+    <string name="username">username</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="title">Title</string>
+    <string name="desc">this a 1st application which i want to use this method for adapter purpse kindly guide me if any issue</string>
+    <string name="latest_details">Latest Details</string>
+    <string name="size">size</string>
+    <string name="path">path</string>
+    <string name="timer">00:00</string>
+    <string name="play">Play</string>
+    <string name="delete">Delete</string>
+</resources>

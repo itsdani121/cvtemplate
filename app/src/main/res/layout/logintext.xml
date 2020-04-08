@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design"
+        android:padding="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cute"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/titles"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="@dimen/_100ssp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/timer"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="@id/myImage"
+            app:layout_constraintEnd_toEndOf="@id/myImage"
+            app:layout_constraintStart_toStartOf="@id/myImage"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <TextView
+            android:id="@+id/titles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="@string/title"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toTopOf="@id/sizes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/myImage"
+            app:layout_constraintTop_toTopOf="@id/myImage" />
+
+        <TextView
+            android:id="@+id/sizes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="@string/size"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toTopOf="@id/path"
+            app:layout_constraintEnd_toEndOf="@id/titles"
+            app:layout_constraintStart_toStartOf="@id/titles"
+            app:layout_constraintTop_toBottomOf="@id/titles" />
+
+        <TextView
+            android:id="@+id/path"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="@string/path"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/sizes"
+            app:layout_constraintStart_toStartOf="@id/sizes"
+            app:layout_constraintTop_toBottomOf="@id/sizes" />
+
+        <ImageView
+            android:id="@+id/moree"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_more"
+            app:layout_constraintEnd_toEndOf="@id/path"
+            app:layout_constraintTop_toTopOf="@id/path"
+            app:layout_constraintBottom_toBottomOf="@id/path"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
